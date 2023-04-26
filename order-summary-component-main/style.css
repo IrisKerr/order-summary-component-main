@@ -22,3 +22,136 @@ body {
   text-align: center;
   background: var(--very-pale-blue);
 }
+
+.container {
+  height: 95vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-container {
+  max-width: 25%;
+  min-height: 80%;
+  margin: auto;
+  border-radius: 1em;
+  background: white;
+}
+
+.order-image img {
+  min-height: 20%;
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 1em 1em 0 0;
+}
+
+.order-content {
+  height: 75%;
+  width: 100%;
+  padding: 2rem 2.5rem;
+}
+
+.order-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.order-description {
+  margin: 1.2rem;
+  font-size: 0.9rem;
+  color: rgb(102, 102, 102);
+  line-height: 1.4rem;
+}
+
+
+
+.order-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.order-details {
+  display: flex;
+
+}
+
+.order-details img {
+  margin-right: 1rem;
+}
+
+.order-details span {
+  display: block;
+
+}
+
+#plan {
+  font-weight: 800;
+}
+
+.order-change {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.order-change:hover {
+  color: var(--desaturated-blue);
+  cursor: pointer;
+}
+
+
+.order-payment {
+  background-color: var(--bright-blue);
+  color: white;
+  border-radius: 0.5em;
+  height: 3em;
+  font-weight: 900;
+  box-shadow: 0px 5px 25px rgba(128, 128, 128, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-payment:hover {
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
+}
+
+.order-cancel {
+  height: 3em;
+  color: var(--dark-blue);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.attribution {
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color:var(--bright-blue);
+}

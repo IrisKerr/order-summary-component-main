@@ -16,7 +16,7 @@
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -24,46 +24,57 @@ body {
 }
 
 .container {
-  height: 95vh;
+  min-height: 85vh;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* order summary container */
+
 .order-container {
-  max-width: 25%;
-  min-height: 80%;
+  max-width: 85%;
+  max-height: 75%;
   margin: auto;
   border-radius: 1em;
   background: white;
 }
 
+/* order upper content with image */
+
 .order-image img {
-  min-height: 20%;
+  min-height: 35%;
   width: 100%;
   display: block;
   margin: auto;
   border-radius: 1em 1em 0 0;
 }
 
+/* order lower content */
+
 .order-content {
-  height: 75%;
+  height: 65%;
   width: 100%;
-  padding: 2rem 2.5rem;
+  padding: 01rem;
 }
 
+/* order title  */
+
 .order-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 900;
   color: var(--dark-blue);
 }
 
+/* order description */
+
 .order-description {
-  margin: 1.2rem;
-  font-size: 0.9rem;
-  color: rgb(102, 102, 102);
+  margin: 1rem 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(109, 121, 151, 0.79);
   line-height: 1.4rem;
 }
 
@@ -74,15 +85,14 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--very-pale-blue);
-  padding: 1rem;
+  padding: 0.6rem;
   margin: 1.5rem auto;
   border-radius: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .order-details {
   display: flex;
-
 }
 
 .order-details img {
@@ -95,7 +105,7 @@ body {
 }
 
 #plan {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .order-change {
@@ -111,9 +121,10 @@ body {
 
 .order-payment {
   background-color: var(--bright-blue);
+  font-size: 0.75rem;
   color: white;
-  border-radius: 0.5em;
-  height: 3em;
+  border-radius: 0.75em;
+  height: 3.5em;
   font-weight: 900;
   box-shadow: 0px 5px 25px rgba(128, 128, 128, 0.8);
   display: flex;
@@ -128,28 +139,28 @@ body {
 
 .order-cancel {
   height: 3em;
-  color: var(--dark-blue);
+  font-size: 0.75rem;
+  color: rgba(109, 121, 151, 0.79);
   font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   cursor: pointer;
 }
 
+/* footer section */
+
 footer {
-  height: 5vh;
+  min-height: 5vh;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-p {
-  font-size: 1rem;
-}
-
 .attribution {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .attribution a {

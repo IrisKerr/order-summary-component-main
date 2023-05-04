@@ -111,10 +111,11 @@ body {
 .order-change {
   font-weight: 600;
   font-size: 0.7rem;
+  text-decoration: none;
 }
 
 .order-change:hover {
-  color: var(--desaturated-blue);
+  color: var(--dark-blue);
   cursor: pointer;
 }
 
@@ -149,6 +150,10 @@ body {
   cursor: pointer;
 }
 
+.order-cancel:hover {
+  color:hsl(223, 47%, 23%);
+}
+
 /* footer section */
 
 footer {
@@ -165,4 +170,34 @@ footer {
 
 .attribution a {
   color:var(--bright-blue);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-top: 2rem auto;
+  }
+  .order-container {
+    min-width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 380px) {
+  .order-container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-container {
+    max-width: 380px;
+  }
+  .order-content {
+    padding: 2rem;
+  }
+  .order-description {
+    margin: 1rem 0.5rem;
+}
 }
